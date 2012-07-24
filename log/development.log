@@ -780,3 +780,58 @@ Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/crops]
 Processing CropsController#index (for 127.0.0.1 at 2012-07-24 06:49:36) [GET]
 Rendering crops/index
 Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/crops]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CropsController#index (for 127.0.0.1 at 2012-07-24 06:53:55) [GET]
+Rendering crops/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/crops]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CropsController#show (for 127.0.0.1 at 2012-07-24 06:54:01) [GET]
+  Parameters: {"id"=>"index"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CropsController#index (for 127.0.0.1 at 2012-07-24 06:54:23) [GET]
+Rendering crops/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/crops]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CropsController#index (for 127.0.0.1 at 2012-07-24 06:54:26) [GET]
+  Parameters: {"lat"=>"10", "crop"=>"maize"}
+Rendering crops/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/crops?lat=10&crop=maize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CropsController#index (for 127.0.0.1 at 2012-07-24 06:55:19) [GET]
+  Parameters: {"lat"=>"10", "crop"=>"maize"}
+Rendering crops/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/crops?lat=10&crop=maize]
