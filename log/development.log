@@ -835,3 +835,19 @@ Processing CropsController#index (for 127.0.0.1 at 2012-07-24 06:55:19) [GET]
   Parameters: {"lat"=>"10", "crop"=>"maize"}
 Rendering crops/index
 Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/crops?lat=10&crop=maize]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (48.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCodes (20120727052936)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (637.7ms)[0m   [0mCREATE TABLE "codes" ("id" serial primary key, "crop_name" character varying(255), "cell_id" integer, "average_predicted_yield" integer, "uncertaincy" integer, "begin_sowing_date" timestamp, "optimal_sowing_date" timestamp, "end_sowing_date" timestamp, "start_harvest_date" timestamp, "optimal_harvest_date" timestamp, "end_harvest_date" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (21.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120727052936')[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
