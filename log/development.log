@@ -851,3 +851,466 @@ Migrating to CreateCodes (20120727052936)
   [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
   [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (11.3ms)[0m   [0;1mINSERT INTO "codes" ("optimal_harvest_date", "end_harvest_date", "cell_id", "uncertaincy", "start_harvest_date", "begin_sowing_date", "end_sowing_date", "created_at", "optimal_sowing_date", "updated_at", "crop_name", "average_predicted_yield") VALUES('2012-10-01 00:00:00.000000', '2012-10-15 00:00:00.000000', 1, 20, '2012-09-10 00:00:00.000000', '2012-06-15 00:00:00.000000', '2012-07-31 00:00:00.000000', '2012-07-27 06:06:32.300633', '2012-07-01 00:00:00.000000', '2012-07-27 06:06:32.300633', 'peanut', 633) RETURNING "id"[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mCode Load (26.3ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (0.5ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (0.5ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (0.4ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (0.9ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (0.5ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (0.3ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (0.7ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (0.4ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (0.3ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (1.1ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (0.4ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (0.4ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (0.6ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (0.4ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (0.3ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (1.0ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (0.7ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (0.7ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;35;1mCode Load (0.5ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mCode Load (0.4ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2012-07-26 23:41:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_stylesheets (5.1ms)
+Rendered layouts/_header (54.5ms)
+Rendered layouts/_footer (9.0ms)
+Completed in 280ms (View: 278, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-07-26 23:41:39) [GET]
+
+SyntaxError (/Users/loarie/rails2/first_app/app/controllers/codes_controller.rb:39: syntax error, unexpected kEND, expecting $end):
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-26 23:42:02) [GET]
+Rendering codes/index
+Completed in 86ms (View: 84, DB: 0) | 200 OK [http://localhost/codes]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-26 23:42:47) [GET]
+  Parameters: {"crop_id"=>"1", "lon"=>"10", "lat"=>"10"}
+
+NameError (undefined local variable or method `crop_codes' for #<CodesController:0x104958da0>):
+  app/controllers/codes_controller.rb:30:in `index'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-26 23:43:34) [GET]
+  Parameters: {"crop_id"=>"1", "lon"=>"10", "lat"=>"10"}
+
+NameError (uninitialized constant CodesController::Crop):
+  app/controllers/codes_controller.rb:33:in `index'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-26 23:44:28) [GET]
+  Parameters: {"crop_id"=>"1", "lon"=>"10", "lat"=>"10"}
+
+NameError (uninitialized constant CodesController::Crop):
+  app/controllers/codes_controller.rb:33:in `index'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-26 23:44:59) [GET]
+  Parameters: {"crop_id"=>"1", "lon"=>"10", "lat"=>"10"}
+Rendering codes/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-26 23:45:28) [GET]
+  Parameters: {"crop_id"=>"1", "lon"=>"10", "lat"=>"10"}
+  [4;36;1mCode Load (143.7ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+
+ArgumentError (too few arguments):
+  app/controllers/codes_controller.rb:34:in `format'
+  app/controllers/codes_controller.rb:34:in `index'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-26 23:45:40) [GET]
+  Parameters: {"crop_id"=>"1", "lon"=>"10", "lat"=>"10"}
+  [4;36;1mCode Load (1.6ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+Rendering codes/index
+Completed in 77ms (View: 1, DB: 2) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-26 23:46:25) [GET]
+  Parameters: {"crop_id"=>"1", "lon"=>"10", "lat"=>"10"}
+  [4;36;1mCode Load (1.8ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+
+ArgumentError (too few arguments):
+  app/controllers/codes_controller.rb:34:in `format'
+  app/controllers/codes_controller.rb:34:in `index'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-26 23:47:11) [GET]
+  Parameters: {"crop_id"=>"1", "lon"=>"10", "lat"=>"10"}
+  [4;36;1mCode Load (2.0ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+Completed in 165ms (View: 159, DB: 2) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (9.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCodes (20120727052936)
+Migrating to CreateResponses (20120727064913)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (184.9ms)[0m   [0mCREATE TABLE "responses" ("id" serial primary key, "average_predicted_yield" integer, "uncertaincy" integer, "begin_sowing_date" timestamp, "optimal_sowing_date" timestamp, "end_sowing_date" timestamp, "start_harvest_date" timestamp, "optimal_harvest_date" timestamp, "end_harvest_date" timestamp) [0m
+  [4;36;1mSQL (5.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120727064913')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-07-26 23:52:41) [GET]
+  Parameters: {"crop_id"=>"1", "lat"=>"10", "lon"=>"10"}
+
+SyntaxError (/Users/loarie/rails2/first_app/app/controllers/codes_controller.rb:36: syntax error, unexpected tSYMBEG, expecting ')'
+      :uncertaincy => @crop.uncertaincy
+       ^
+/Users/loarie/rails2/first_app/app/controllers/codes_controller.rb:37: syntax error, unexpected tASSOC, expecting kEND
+      :begin_sowing_date => @crop.begin_sowing_date
+                           ^
+/Users/loarie/rails2/first_app/app/controllers/codes_controller.rb:38: syntax error, unexpected tASSOC, expecting kEND
+      :optimal_sowing_date => @crop.optimal_sowing_date
+                             ^
+/Users/loarie/rails2/first_app/app/controllers/codes_controller.rb:39: syntax error, unexpected tASSOC, expecting kEND
+      :end_sowing_date => @crop.end_sowing_date
+                         ^
+/Users/loarie/rails2/first_app/app/controllers/codes_controller.rb:40: syntax error, unexpected tASSOC, expecting kEND
+      :start_harvest_date => @crop.start_harvest_date
+                            ^
+/Users/loarie/rails2/first_app/app/controllers/codes_controller.rb:41: syntax error, unexpected tASSOC, expecting kEND
+      :optimal_harvest_date => @crop.optimal_harvest_date
+                              ^
+/Users/loarie/rails2/first_app/app/controllers/codes_controller.rb:42: syntax error, unexpected tASSOC, expecting kEND
+      :end_harvest_date => @crop.end_harvest_date
+                          ^
+/Users/loarie/rails2/first_app/app/controllers/codes_controller.rb:43: syntax error, unexpected ')', expecting kEND):
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-26 23:53:01) [GET]
+  Parameters: {"crop_id"=>"1", "lat"=>"10", "lon"=>"10"}
+  [4;36;1mCode Load (1.9ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+Completed in 21ms (View: 1, DB: 2) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (122.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateResponses (20120727064913)
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (122.5ms)[0m   [0;1mDROP TABLE "responses"[0m
+  [4;35;1mSQL (9.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120727064913'[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCodes (20120727052936)
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mDROP TABLE "codes"[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120727052936'[0m
+  [4;36;1mSQL (48.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCodes (20120727052936)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (138.2ms)[0m   [0mCREATE TABLE "codes" ("id" serial primary key, "crop_name" character varying(255), "cell_id" integer, "average_predicted_yield" integer, "uncertaincy" integer, "start_sowing_date" timestamp, "optimal_sowing_date" timestamp, "end_sowing_date" timestamp, "start_harvest_date" timestamp, "optimal_harvest_date" timestamp, "end_harvest_date" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120727052936')[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCOMMIT[0m
+Migrating to CreateResponses (20120727064913)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE "responses" ("id" serial primary key, "average_predicted_yield" integer, "uncertaincy" integer, "start_sowing_date" timestamp, "optimal_sowing_date" timestamp, "end_sowing_date" timestamp, "start_harvest_date" timestamp, "optimal_harvest_date" timestamp, "end_harvest_date" timestamp) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120727064913')[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO "codes" ("uncertaincy", "optimal_harvest_date", "start_harvest_date", "crop_name", "average_predicted_yield", "created_at", "start_sowing_date", "end_harvest_date", "optimal_sowing_date", "end_sowing_date", "updated_at", "cell_id") VALUES(20, '2012-10-01 00:00:00.000000', '2012-09-10 00:00:00.000000', 'peanut', 633, '2012-07-27 07:16:52.024445', '2012-06-15 00:00:00.000000', '2012-10-15 00:00:00.000000', '2012-07-01 00:00:00.000000', '2012-07-31 00:00:00.000000', '2012-07-27 07:16:52.024445', 1) RETURNING "id"[0m
+  [4;35;1mSQL (54.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:18:06) [GET]
+  Parameters: {"lat"=>"10", "crop_id"=>"1", "lon"=>"10"}
+  [4;35;1mCode Load (1.8ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+Completed in 22ms (View: 1, DB: 2) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:18:10) [GET]
+  Parameters: {"lat"=>"10", "crop_id"=>"1", "lon"=>"10"}
+  [4;35;1mCode Load (1.4ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+Completed in 16ms (View: 1, DB: 3) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:18:44) [GET]
+  Parameters: {"lat"=>"10", "sowing_date"=>"2012-6-1", "crop_id"=>"1", "lon"=>"10"}
+  [4;35;1mCode Load (1.8ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+
+ArgumentError (comparison of String with 0 failed):
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/date.rb:621:in `<'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/date.rb:621:in `valid_civil?'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/date.rb:1520:in `new'
+  app/controllers/codes_controller.rb:44:in `index'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/loarie/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mCode Load (2.1ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:24:32) [GET]
+  Parameters: {"lon"=>"10", "lat"=>"10", "crop_id"=>"1", "sowing_date"=>"2012-6-1"}
+  [4;35;1mCode Load (2.1ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+Completed in 23ms (View: 3, DB: 2) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10&sowing_date=2012-6-1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:24:41) [GET]
+  Parameters: {"lon"=>"10", "lat"=>"10", "crop_id"=>"1", "sowing_date"=>"2012-5-1"}
+  [4;35;1mCode Load (1.7ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+Completed in 22ms (View: 3, DB: 2) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10&sowing_date=2012-5-1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:24:45) [GET]
+  Parameters: {"lon"=>"10", "lat"=>"10", "crop_id"=>"1", "sowing_date"=>"2012-4-1"}
+  [4;35;1mCode Load (1.3ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+Completed in 16ms (View: 3, DB: 2) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10&sowing_date=2012-4-1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:24:56) [GET]
+  Parameters: {"lon"=>"10", "lat"=>"10", "crop_id"=>"1", "sowing_date"=>"2011-4-1"}
+  [4;35;1mCode Load (1.6ms)[0m   [0mSELECT * FROM "codes" LIMIT 1[0m
+Completed in 18ms (View: 3, DB: 2) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10&sowing_date=2011-4-1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:25:12) [GET]
+  Parameters: {"lat"=>"10", "crop_id"=>"1", "sowing_date"=>"2011-4-1"}
+Rendering codes/index
+Completed in 149ms (View: 147, DB: 0) | 200 OK [http://localhost/codes?crop_id=1&lat=10&sowing_date=2011-4-1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:25:38) [GET]
+  Parameters: {"lat"=>"10", "crop_id"=>"1", "sowing_date"=>"2011-4-1"}
+Rendering codes/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/codes?crop_id=1&lat=10&sowing_date=2011-4-1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:25:50) [GET]
+  Parameters: {"lon"=>"10", "lat"=>"10", "sowing_date"=>"2011-4-1"}
+Rendering codes/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/codes?lat=10&lon=10&sowing_date=2011-4-1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:25:57) [GET]
+  Parameters: {"lon"=>"10", "lat"=>"10", "crop_id"=>"1"}
+  [4;36;1mCode Load (2.2ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+Completed in 19ms (View: 1, DB: 3) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing CodesController#index (for 127.0.0.1 at 2012-07-27 00:26:18) [GET]
+  Parameters: {"lon"=>"10", "lat"=>"10", "crop_id"=>"1", "sowing_date"=>"2012-6-20"}
+  [4;36;1mCode Load (1.7ms)[0m   [0;1mSELECT * FROM "codes" LIMIT 1[0m
+Completed in 19ms (View: 3, DB: 2) | 200 OK [http://localhost/codes?crop_id=1&lat=10&lon=10&sowing_date=2012-6-20]

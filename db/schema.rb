@@ -9,14 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120727052936) do
+ActiveRecord::Schema.define(:version => 20120727064913) do
 
   create_table "codes", :force => true do |t|
     t.string   "crop_name"
     t.integer  "cell_id"
     t.integer  "average_predicted_yield"
     t.integer  "uncertaincy"
-    t.datetime "begin_sowing_date"
+    t.datetime "start_sowing_date"
     t.datetime "optimal_sowing_date"
     t.datetime "end_sowing_date"
     t.datetime "start_harvest_date"
@@ -24,6 +24,17 @@ ActiveRecord::Schema.define(:version => 20120727052936) do
     t.datetime "end_harvest_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "responses", :force => true do |t|
+    t.integer  "average_predicted_yield"
+    t.integer  "uncertaincy"
+    t.datetime "start_sowing_date"
+    t.datetime "optimal_sowing_date"
+    t.datetime "end_sowing_date"
+    t.datetime "start_harvest_date"
+    t.datetime "optimal_harvest_date"
+    t.datetime "end_harvest_date"
   end
 
 end
