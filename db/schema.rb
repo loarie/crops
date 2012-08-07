@@ -13,28 +13,30 @@ ActiveRecord::Schema.define(:version => 20120727064913) do
 
   create_table "codes", :force => true do |t|
     t.string   "crop_name"
-    t.integer  "cell_id"
+    t.float    "lat"
+    t.float    "lon"
     t.integer  "average_predicted_yield"
     t.integer  "uncertaincy"
-    t.datetime "start_sowing_date"
-    t.datetime "optimal_sowing_date"
-    t.datetime "end_sowing_date"
-    t.datetime "start_harvest_date"
-    t.datetime "optimal_harvest_date"
-    t.datetime "end_harvest_date"
+    t.date     "start_sowing_date"
+    t.date     "optimal_sowing_date"
+    t.date     "end_sowing_date"
+    t.date     "start_harvest_date"
+    t.date     "optimal_harvest_date"
+    t.date     "end_harvest_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "responses", :force => true do |t|
-    t.integer  "average_predicted_yield"
-    t.integer  "uncertaincy"
-    t.datetime "start_sowing_date"
-    t.datetime "optimal_sowing_date"
-    t.datetime "end_sowing_date"
-    t.datetime "start_harvest_date"
-    t.datetime "optimal_harvest_date"
-    t.datetime "end_harvest_date"
+    t.string  "crop"
+    t.integer "average_predicted_yield"
+    t.integer "uncertaincy"
+    t.date    "start_sowing_date"
+    t.date    "optimal_sowing_date"
+    t.date    "end_sowing_date"
+    t.date    "start_harvest_date"
+    t.date    "optimal_harvest_date"
+    t.date    "end_harvest_date"
   end
 
 end

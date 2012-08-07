@@ -13,6 +13,7 @@ GEM
     activesupport (2.3.12)
     addressable (2.2.8)
     excon (0.15.4)
+    fastercsv (1.5.5)
     heroku (2.29.0)
       heroku-api (~> 0.2.13)
       launchy (>= 0.3.2)
@@ -46,6 +47,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  fastercsv
   heroku
   pg
   rails (~> 2.3.12)
