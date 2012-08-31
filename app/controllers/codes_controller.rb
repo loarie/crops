@@ -34,6 +34,14 @@ class CodesController < ApplicationController
     lat = params[:lat]
     num = 0.08333
     @crop = Code.first(:conditions => ["crop_name = ? AND (lat - #{num}) < ? AND (lat + #{num}) > ? AND (lon - #{num}) < ? AND (lon + #{num}) > ?", crop_name, lat, lat, lon, lon])
+    @altresponse = Code.first(:conditions => ["(lat - #{num}) < ? AND (lat + #{num}) > ? AND (lon - #{num}) < ? AND (lon + #{num}) > ?", lat, lat, lon, lon])
+    
+    unless @altresponse
+      @response = Response.new(
+        :alert => "No data for that location"
+      )
+      render :json => @response
+    end
     
     if @crop
       crop_optimal_harvest_date = @crop.optimal_harvest_date
@@ -68,6 +76,11 @@ class CodesController < ApplicationController
         :start_harvest_date => crop_start_harvest_date,
         :optimal_harvest_date => crop_optimal_harvest_date,
         :end_harvest_date => crop_end_harvest_date
+      )
+      render :json => @response
+    else
+      @response = Response.new(
+        :alert => "No data for that crop at that location"
       )
       render :json => @response
     end
