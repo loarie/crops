@@ -37,10 +37,8 @@ class CodesController < ApplicationController
     @altresponse = Code.first(:conditions => ["(lat - #{num}) < ? AND (lat + #{num}) > ? AND (lon - #{num}) < ? AND (lon + #{num}) > ?", lat, lat, lon, lon])
     
     unless @altresponse
-      @response = Response.new(
-        :alert => "No data for that location"
-      )
-      render :json => @response
+      render :json => {:alert => "No data for that location"}
+      return
     end
     
     if @crop
@@ -79,10 +77,7 @@ class CodesController < ApplicationController
       )
       render :json => @response
     else
-      @response = Response.new(
-        :alert => "No data for that crop at that location"
-      )
-      render :json => @response
+      render :json => {:alert => "No data for this crop at that location"}
     end
   end
 end
