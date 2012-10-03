@@ -8,16 +8,18 @@ FasterCSV.foreach(filename, :col_sep =>',', :headers => :first_row) do |row|
     crop = row["crop"]
     average_predicted_yield = row["average_predicted_yield"]
     uncertainty = row["uncertainty"]
-    start_sowing_date = row["start_sowing_date"]
-    end_sowing_date = row["end_sowing_date"]
-    start_harvest_date = row["start_harvest_date"]
-    end_harvest_date = row["end_harvest_date"]
+    start_sowing_date_raw = row["start_sowing_date"]
+    end_sowing_date_raw = row["end_sowing_date"]
+    start_harvest_date_raw = row["start_harvest_date"]
+    end_harvest_date_raw = row["end_harvest_date"]
     
-    start_sowing_date = start_sowing_date.split("/")
-    start_sowing_date = DateTime.new( 2012,start_sowing_date[1].to_i, start_sowing_date[0].to_i)
-    end_sowing_date = end_sowing_date.split("/")
-    end_sowing_date = DateTime.new( 2012,end_sowing_date[1].to_i, end_sowing_date[0].to_i )
-    
+    start_sowing_date_mid = start_sowing_date_raw.split("/")
+    start_sowing_date = DateTime.new( 2012,start_sowing_date_mid[1].to_i, start_sowing_date_mid[0].to_i)
+    end_sowing_date_mid = end_sowing_date_raw.split("/")
+    end_sowing_date = DateTime.new( 2012,end_sowing_date_mid[1].to_i, end_sowing_date_mid[0].to_i )
+    unless end_sowing_date > start_sowing_date
+      end_sowing_date = DateTime.new( 2013,end_sowing_date_mid[1].to_i, end_sowing_date_mid[0].to_i )
+    end
     start_sowing_date_time = Time.parse(start_sowing_date.to_s)
     end_sowing_date_time = Time.parse(end_sowing_date.to_s)
     avg = Time.at((start_sowing_date_time.to_f + end_sowing_date_time.to_f) / 2)

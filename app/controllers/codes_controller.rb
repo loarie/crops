@@ -42,23 +42,31 @@ class CodesController < ApplicationController
     end
     
     if @crop
-      crop_optimal_harvest_date = @crop.optimal_harvest_date
       crop_start_harvest_date = @crop.start_harvest_date
+      crop_optimal_harvest_date = @crop.optimal_harvest_date
       crop_end_harvest_date = @crop.end_harvest_date
       
-      crop_optimal_sowing_date = @crop.optimal_sowing_date
+      if crop_start_harvest_date > crop_optimal_harvest_date
+        crop_start_harvest_date = DateTime.new( (crop_start_harvest_date.year - 1), crop_start_harvest_date.month, crop_start_harvest_date.day )
+      end
+      
+      if crop_optimal_harvest_date > crop_end_harvest_date
+        crop_end_harvest_date = DateTime.new( (crop_end_harvest_date.year + 1), crop_end_harvest_date.month, crop_end_harvest_date.day )
+      end
+      
       crop_start_sowing_date = @crop.start_sowing_date
+      crop_optimal_sowing_date = @crop.optimal_sowing_date
       crop_end_sowing_date = @crop.end_sowing_date
-    
+      
       if sowing_date = params[:sowing_date]
         sowing_date = sowing_date.split("-")
         optimal_sowing_date = DateTime.new( sowing_date[0].to_i, sowing_date[1].to_i, sowing_date[2].to_i )
-        start_sowing_date = ( ( crop_start_sowing_date - crop_optimal_sowing_date ) / 60 ).minutes.since optimal_sowing_date
-        end_sowing_date = ( ( crop_end_sowing_date - crop_optimal_sowing_date ) / 60 ).minutes.since optimal_sowing_date
+        start_sowing_date = ( ( crop_start_sowing_date - crop_optimal_sowing_date ) ).days.since optimal_sowing_date
+        end_sowing_date = ( ( crop_end_sowing_date - crop_optimal_sowing_date ) ).days.since optimal_sowing_date
         
-        crop_start_harvest_date = ( ( crop_start_harvest_date - crop_start_sowing_date ) / 60 ).minutes.since start_sowing_date
-        crop_optimal_harvest_date = ( ( crop_optimal_harvest_date - crop_optimal_sowing_date ) / 60 ).minutes.since optimal_sowing_date
-        crop_end_harvest_date = ( ( crop_end_harvest_date - crop_end_sowing_date ) / 60 ).minutes.since end_sowing_date
+        crop_start_harvest_date = ( ( crop_start_harvest_date - crop_start_sowing_date ) ).days.since start_sowing_date
+        crop_optimal_harvest_date = ( ( crop_optimal_harvest_date - crop_optimal_sowing_date ) ).days.since optimal_sowing_date
+        crop_end_harvest_date = ( ( crop_end_harvest_date - crop_end_sowing_date ) ).days.since end_sowing_date
         
         crop_optimal_sowing_date = optimal_sowing_date
         crop_start_sowing_date = start_sowing_date
