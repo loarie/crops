@@ -26,9 +26,9 @@ FasterCSV.foreach(filename, :col_sep =>',', :headers => :first_row) do |row|
     optimal_sowing_date = Date.parse(avg.to_s)
     
     season = season.split(" days")[0].split("-")
-    midseason = ( season[1].to_i - season[0].to_i ) + season[0].to_i
-    start_harvest_date_calc = start_sowing_date.to_time.advance( :days => season[1].to_i )
-    end_harvest_date_calc = end_sowing_date.to_time.advance( :days => season[0].to_i )
+    midseason = ( ( season[1].to_i - season[0].to_i ) / 2 ) + season[0].to_i
+    start_harvest_date_calc = start_sowing_date.to_time.advance( :days => midseason )
+    end_harvest_date_calc = end_sowing_date.to_time.advance( :days => midseason )
     optimal_harvest_date_calc = optimal_sowing_date.to_time.advance( :days => midseason )
     
     code = Code.new(
